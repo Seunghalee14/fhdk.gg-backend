@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notices",
+  "info": {
+    "name": "notice",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "published": {
+      "type": "datetime"
+    },
+    "link": {
+      "type": "richtext"
+    },
+    "scraper": {
+      "model": "scraper",
+      "via": "notices"
+    }
+  }
+}

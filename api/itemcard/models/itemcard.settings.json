@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itemcards",
+  "info": {
+    "name": "itemcard",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "class": {
+      "model": "class"
+    },
+    "dealerinfos": {
+      "via": "itemcards",
+      "collection": "dealerinfo"
+    }
+  }
+}

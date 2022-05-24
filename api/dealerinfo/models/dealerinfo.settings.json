@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dealerinfos",
+  "info": {
+    "name": "dealerinfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "itemcards": {
+      "via": "dealerinfos",
+      "collection": "itemcard",
+      "dominant": true
+    },
+    "itemfavors": {
+      "collection": "itemfavor",
+      "via": "dealerinfos",
+      "dominant": true
+    },
+    "continents": {
+      "via": "dealerinfos",
+      "collection": "continent",
+      "dominant": true
+    },
+    "itemextras": {
+      "collection": "itemextra",
+      "via": "dealerinfos",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stoves",
+  "info": {
+    "name": "stove"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    }
+  }
+}

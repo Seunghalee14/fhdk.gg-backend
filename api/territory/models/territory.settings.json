@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "territories",
+  "info": {
+    "name": "territory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "continents": {
+      "via": "territories",
+      "collection": "continent"
+    },
+    "iamge": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "continents",
+  "info": {
+    "name": "continent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "territories": {
+      "via": "continents",
+      "collection": "territory",
+      "dominant": true
+    },
+    "location": {
+      "type": "json"
+    },
+    "dealerinfos": {
+      "via": "continents",
+      "collection": "dealerinfo"
+    },
+    "location_event": {
+      "type": "json"
+    }
+  }
+}

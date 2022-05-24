@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "votes",
+  "info": {
+    "name": "vote",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "is_upvote": {
+      "type": "boolean",
+      "default": false
+    },
+    "user_id": {
+      "type": "integer"
+    },
+    "report_id": {
+      "type": "string"
+    }
+  }
+}

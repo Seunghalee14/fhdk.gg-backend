@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itemextras",
+  "info": {
+    "name": "itemextra"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "quanity": {
+      "type": "biginteger"
+    },
+    "payment": {
+      "type": "biginteger"
+    },
+    "dealerinfos": {
+      "via": "itemextras",
+      "collection": "dealerinfo"
+    }
+  }
+}

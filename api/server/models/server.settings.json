@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servers",
+  "info": {
+    "name": "server",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "descrtiption": {
+      "type": "string"
+    }
+  }
+}

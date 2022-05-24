@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/itemcards",
+      "handler": "itemcard.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itemcards/count",
+      "handler": "itemcard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itemcards/:id",
+      "handler": "itemcard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/itemcards",
+      "handler": "itemcard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/itemcards/:id",
+      "handler": "itemcard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/itemcards/:id",
+      "handler": "itemcard.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

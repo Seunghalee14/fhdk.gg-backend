@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "name": "report",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "continent": {
+      "model": "continent"
+    },
+    "territory": {
+      "model": "territory"
+    },
+    "itemcard": {
+      "model": "itemcard"
+    },
+    "itemfavor": {
+      "model": "itemfavor"
+    },
+    "server": {
+      "model": "server"
+    },
+    "report_date": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "string",
+      "unique": false
+    },
+    "count": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "upvote": {
+      "type": "integer",
+      "default": 0
+    },
+    "downvote": {
+      "type": "integer",
+      "default": 0
+    },
+    "user_id": {
+      "type": "integer"
+    }
+  }
+}

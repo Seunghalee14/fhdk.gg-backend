@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "periodicevents",
+  "info": {
+    "name": "periodicevent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "time"
+    },
+    "end": {
+      "type": "time"
+    },
+    "continents": {
+      "collection": "continent"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/periodicevents",
+      "handler": "periodicevent.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/periodicevents/count",
+      "handler": "periodicevent.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/periodicevents/:id",
+      "handler": "periodicevent.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/periodicevents",
+      "handler": "periodicevent.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/periodicevents/:id",
+      "handler": "periodicevent.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/periodicevents/:id",
+      "handler": "periodicevent.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dealerinfos",
+      "handler": "dealerinfo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dealerinfos/count",
+      "handler": "dealerinfo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dealerinfos/:id",
+      "handler": "dealerinfo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dealerinfos",
+      "handler": "dealerinfo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dealerinfos/:id",
+      "handler": "dealerinfo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dealerinfos/:id",
+      "handler": "dealerinfo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

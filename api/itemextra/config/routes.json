@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/itemextras",
+      "handler": "itemextra.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itemextras/count",
+      "handler": "itemextra.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itemextras/:id",
+      "handler": "itemextra.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/itemextras",
+      "handler": "itemextra.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/itemextras/:id",
+      "handler": "itemextra.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/itemextras/:id",
+      "handler": "itemextra.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

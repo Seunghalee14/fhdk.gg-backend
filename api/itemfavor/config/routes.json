@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/itemfavors",
+      "handler": "itemfavor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itemfavors/count",
+      "handler": "itemfavor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itemfavors/:id",
+      "handler": "itemfavor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/itemfavors",
+      "handler": "itemfavor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/itemfavors/:id",
+      "handler": "itemfavor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/itemfavors/:id",
+      "handler": "itemfavor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
